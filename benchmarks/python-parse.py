@@ -21,7 +21,6 @@ def timeit(f, args):
 if __name__ == '__main__':
     n = int(sys.argv[1])
     files = np.random.choice(glob.glob('../data/lmd_full/**/*.mid'), n)
-    print(files[0])
     print(f'[vishnubob] mean read+parse time (n={n}): {np.mean(timeit(midi.read_midifile, files))}')
     print(f'[music21] mean read+parse time (n={n}): {np.mean(timeit(converter.parse, files))}')
     print(f'[mido] mean read+parse time (n={n}): {np.mean(timeit(mido.MidiFile, files))}')
