@@ -1,0 +1,4 @@
+-e git+https://github.com/vishnubob/python-midi@feature/python3#egg=midi
+numpy
+music21
+mido
