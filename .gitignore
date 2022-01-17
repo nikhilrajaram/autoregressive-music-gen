@@ -3,3 +3,6 @@
 .idea/
 data/**/*.mid
 data/*.tar.gz
+**/node_modules
+**/venv/
+**/.ipynb_checkpoints/
